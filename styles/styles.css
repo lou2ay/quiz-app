@@ -43,4 +43,27 @@ a { text-decoration: none; color: inherit; }
   }
   .quiz-card h3 { margin-bottom: 1rem; font-size: 1.2rem; }
   .quiz-card button { margin-top: 0.5rem; }
+
+  /* Auth Container */
+.auth-container {
+    max-width: 400px; margin: 4rem auto;
+    background: #fff; padding: 2rem; border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .tabs { display: flex; margin-bottom: 1.5rem; }
+  .tab-button {
+    flex: 1; padding: 0.8rem; background: #ecf0f1;
+    border: none; cursor: pointer; font-size: 1rem;
+    transition: background 0.3s;
+  }
+  .tab-button.active { background: #3498db; color: #fff; }
+  .tab-button:not(.active):hover { background: #dde6ea; }
+  .auth-form label {
+    display: block; margin-bottom: 0.8rem; font-size: 0.9rem;
+  }
+  .auth-form input {
+    width: 100%; padding: 0.6rem; margin-top: 0.3rem;
+    border: 1px solid #ccc; border-radius: 4px;
+  }
+  .auth-form button { width: 100%; margin-top: 1rem; }
   
