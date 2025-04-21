@@ -19,3 +19,8 @@ function loadUsers() {
   function saveUsers(users) {
     localStorage.setItem('users', JSON.stringify(users));
   }
+
+  // Store the current session user
+function setCurrentUser(user) {
+    localStorage.setItem('currentUser', JSON.stringify(user));
+  }
