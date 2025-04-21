@@ -65,3 +65,25 @@ regForm.addEventListener('submit', e => {
     alert('Registration successful! Please log in.');
     toggleTab('login');
   });
+
+  // Handle login (admin or regular)
+loginForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const email = document.getElementById('login-email').value.trim().toLowerCase();
+    const pass  = document.getElementById('login-password').value;
+  // Admin login
+  if (email === ADMIN_EMAIL && pass === ADMIN_PASS) {
+    setCurrentUser({ email, isAdmin: true, scores: [] });
+    return window.location.href = './dashboard.html';
+  }
+
+  // Regular user login
+  const users = loadUsers();
+  const user  = users.find(u => u.email === email && u.password === pass);
+  if (!user) {
+    return alert('Invalid email or password.');
+  }
+
+  setCurrentUser(user);
+  window.location.href = './home.html';
+});  
