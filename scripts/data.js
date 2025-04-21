@@ -54,4 +54,25 @@
               }
             ]
           },
-          {
+          {id: 'js-basics',
+            title: 'Basics of JavaScript',
+            questions: [
+              {
+                text: 'Which symbol starts a single-line comment in JavaScript?',
+                options: ['//', '/*', '<!--'],
+                correctIndex: 0
+              },
+              {
+                text: 'How do you declare a variable in ES6?',
+                options: ['var x = 5;', 'let x = 5;', 'int x = 5;'],
+                correctIndex: 1
+              },
+              {
+                text: 'Which method outputs text to the browser console?',
+                options: ['console.warn()', 'console.log()', 'print()'],
+                correctIndex: 1
+              }
+            ]
+          }
+        ];
+        
