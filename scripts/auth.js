@@ -15,3 +15,7 @@ function loadUsers() {
     }
   }
   
+  // Save the users array back to localStorage
+  function saveUsers(users) {
+    localStorage.setItem('users', JSON.stringify(users));
+  }
