@@ -75,4 +75,19 @@
             ]
           }
         ];
-        
+        let existing = [];
+        try {
+          existing = JSON.parse(localStorage.getItem('quizzes')) || [];
+        } catch {
+          existing = [];
+        }
+      
+        // Merge defaults and existing, then dedupe by id
+        const quizMap = {};
+        defaultQuizzes.concat(existing).forEach(q => {
+          quizMap[q.id] = q;
+        });
+        const merged = Object.values(quizMap);
+      
+        localStorage.setItem('quizzes', JSON.stringify(merged));
+      })();
