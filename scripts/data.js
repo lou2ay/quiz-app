@@ -29,3 +29,29 @@
             }
           ]
         },
+        {
+            id: 'css-basics',
+            title: 'Basics of CSS',
+            questions: [
+              {
+                text: 'What does CSS stand for?',
+                options: [
+                  'Cascading Style Sheets',
+                  'Computer Style Sheets',
+                  'Creative Style System'
+                ],
+                correctIndex: 0
+              },
+              {
+                text: 'Which property is used to change the background color?',
+                options: ['background-color', 'color', 'bgcolor'],
+                correctIndex: 0
+              },
+              {
+                text: 'How do you select an element with id "header" in CSS?',
+                options: ['#header', '.header', 'header'],
+                correctIndex: 0
+              }
+            ]
+          },
+          {
