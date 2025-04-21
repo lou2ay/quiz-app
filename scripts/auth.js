@@ -30,3 +30,21 @@ const loginTab    = document.getElementById('login-tab');
 const registerTab = document.getElementById('register-tab');
 const loginForm   = document.getElementById('login-form');
 const regForm     = document.getElementById('register-form');
+
+// Switch between Login and Register tabs
+function toggleTab(tab) {
+    if (tab === 'login') {
+      loginTab.classList.add('active');
+      registerTab.classList.remove('active');
+      loginForm.classList.remove('hidden');
+      regForm.classList.add('hidden');
+    } else {
+      registerTab.classList.add('active');
+      loginTab.classList.remove('active');
+      regForm.classList.remove('hidden');
+      loginForm.classList.add('hidden');
+    }
+  }
+  
+  loginTab.addEventListener('click', () => toggleTab('login'));
+  registerTab.addEventListener('click', () => toggleTab('register'));
