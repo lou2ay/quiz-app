@@ -48,3 +48,20 @@ function toggleTab(tab) {
   
   loginTab.addEventListener('click', () => toggleTab('login'));
   registerTab.addEventListener('click', () => toggleTab('register'));
+
+  // Handle user registration
+regForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const email = document.getElementById('reg-email').value.trim().toLowerCase();
+    const pass  = document.getElementById('reg-password').value;
+    const users = loadUsers();
+  
+    if (users.some(u => u.email === email)) {
+      return alert('Email already registered.');
+    }
+  
+    users.push({ email, password: pass, isAdmin: false, scores: [] });
+    saveUsers(users);
+    alert('Registration successful! Please log in.');
+    toggleTab('login');
+  });
