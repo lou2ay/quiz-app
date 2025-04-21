@@ -21,3 +21,12 @@ a { text-decoration: none; color: inherit; }
     cursor: pointer; font-size: 0.9rem; margin-left: 0.5rem;
   }
   .navbar .btn:hover { background: #ecf0f1; }
+
+  /* Buttons */
+.btn {
+    display: inline-block; background: #3498db; color: #fff;
+    padding: 0.6rem 1rem; border: none; border-radius: 4px;
+    cursor: pointer; font-size: 1rem;
+  }
+  .btn:hover { background: #2980b9; }
+  
