@@ -7,3 +7,17 @@ a { text-decoration: none; color: inherit; }
 
 /* Container */
 .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+
+
+/* Navbar */
+.navbar {
+    background: #3498db; color: #fff;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 2rem;
+  }
+  .navbar .btn {
+    background: #fff; color: #3498db;
+    border: none; padding: 0.5rem 1rem; border-radius: 4px;
+    cursor: pointer; font-size: 0.9rem; margin-left: 0.5rem;
+  }
+  .navbar .btn:hover { background: #ecf0f1; }
