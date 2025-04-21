@@ -6,3 +6,9 @@ function getCurrentUser() {
   function loadQuizzes() {
     return JSON.parse(localStorage.getItem('quizzes') || '[]');
   }
+
+  // Logout helper
+  function logout() {
+    localStorage.removeItem('currentUser');
+    window.location.href = 'auth.html';
+  }
