@@ -4,3 +4,6 @@ html, body { height: 100%; }
 body { font-family: Arial, sans-serif; background: #f4f7f8; color: #333; line-height: 1.6; }
 a { text-decoration: none; color: inherit; }
 .hidden { display: none; }
+
+/* Container */
+.container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
