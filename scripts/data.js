@@ -22,7 +22,7 @@
               text: 'How do you create a hyperlink to example.com?',
               options: [
                 '<a href="https://example.com">Link</a>',
-                '<link url="https://example.com">Link</link>',
+                '<link url=":https//example.com">Link</link>',
                 '<hyperlink src="https://example.com">Link</hyperlink>'
               ],
               correctIndex: 0
